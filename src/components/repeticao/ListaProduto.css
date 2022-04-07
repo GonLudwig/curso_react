@@ -1,0 +1,11 @@
+.TabelaProtudos table {
+    width: 100%;
+}
+
+.TabelaProtudos th {
+    background-color: #851e3e;
+}
+
+.TabelaProtudos .Par {
+    background-color: #ddd;
+}
