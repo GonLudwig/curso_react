@@ -10,20 +10,38 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMenbro from "./components/basicos/FamiliaMenbro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import ListaProduto from "./components/repeticao/ListaProduto";
+import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import Input from "./components/formulario/Input";
 
 
 export default _ => 
 <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
-        <Card titulo="#08 - Renderizacao Condicional" color="#dec3c3">
-                <ParOuImpar numero={2}/>
-                <ParOuImpar numero={3}/>
-                <UsuarioInfo usuario={{nome: 'Fernando'}}/>
-                <UsuarioInfo />
-        </Card>
+            <Card titulo="#11 - Componente Controlado" color="#6497b1">
+                <Input/>
+            </Card>
 
-        <Card titulo="#07 - Desafio Repeticao" color="#451e3e">
+            <Card titulo="#10 - Comunicacao Indireta" color="#fe4a49">
+                <IndiretaPai/>
+            </Card>
+
+            <Card titulo="#09 - Comunicacao Direta" color="#2ab7ca">
+                <DiretaPai/>
+            </Card>
+
+            <Card titulo="#08 - Renderizacao Condicional" color="#dec3c3">
+                    <ParOuImpar numero={2}/>
+                    <ParOuImpar numero={3}/>
+                    <UsuarioInfo usuario={{nome: 'Fernando'}}/>
+                    <UsuarioInfo usuario={{ }}/>
+                    <UsuarioInfo />
+            </Card>
+
+            <Card titulo="#07 - Desafio Repeticao" color="#451e3e">
                 <ListaProduto/>
             </Card>
 
